@@ -24,22 +24,31 @@ body {
 }
 
 /* ============================================================
-   TODO 1 — Selector de ETIQUETA
+   TODO 1 ✅— Selector de ETIQUETA
    Todos los <p> de la página deberían verse con:
    - color: #5c4a3a
    ============================================================ */
 
+p {
+  color: #5c4a3a;
+}
 /* ============================================================
-   TODO 2 — Selector de CLASE
+   TODO 2 ✅— Selector de CLASE
    Los párrafos (y listas) con clase .destacado deben tener:
    - color: #2a9d8f
    - font-weight: bold
    Pregunta: esta regla también usa `color`, igual que el
    TODO 1. ¿Quién gana y por qué?
+
+   gana el destacado por la especificidad
    ============================================================ */
 
+.destacado {
+  color: #2a9d8f;
+  font-size: bold;
+}
 /* ============================================================
-   TODO 3 — Selector de ID
+   TODO 3 ✅— Selector de ID
    El título #titulo-principal:
    - color: #d62828
    - text-align: center
@@ -47,27 +56,49 @@ body {
    - background-color: #ffd166
    - color: #7a4b00
    ============================================================ */
-
+#titulo-principal {
+  color: #d62828;
+  text-align: center;
+}
+#aviso {
+  background-color: #ffd166;
+  color: #7a4b00;
+}
 /* ============================================================
-   TODO 4 — Selectores AGRUPADOS
+   TODO 4 ✅— Selectores AGRUPADOS
    Con UNA sola regla (separando con coma), dale a h1 y h2:
    - font-family: Georgia, "Times New Roman", serif
    ============================================================ */
 
+h1,
+h2 {
+  font-family: Georgia, "Times New Roman", serif;
+}
 /* ============================================================
-   TODO 5 — Selectores ANIDADOS
+   TODO 5 ✅— Selectores ANIDADOS
    Solo los <li> que están DENTRO de .menu deben tener:
    - font-size: 18px
    Después probá escribir la regla solo con li (sin .menu) y
    mirá la página. ¿Cambió algo? ¿Por qué?
+   
+   RTA: No, ya que todos los li estan dentro del menu
    ============================================================ */
 
+.menu li {
+  font-size: 18px;
+}
+li {
+  font-size: 20px;
+}
 /* ============================================================
     DESAFÍO DE ESPECIFICIDAD — respondé antes de mirar el
    navegador. En la página hay varios <p>:
    1. ¿De qué color queda el <p> con clase .destacado?
+   el color de la clase destacado queda de color cian
    2. ¿De qué color queda el <p> con id #aviso?
+   el color de #aviso queda subrayado de un color crema
    3. ¿Y los <p> que no tienen clase ni id?
+   los p que no tienen clase ni id quedan como lo cambiamos anteriormente
    Escribí tu respuesta acá abajo, después abrí el navegador
    y verificá. ¿Coincidió con la cuenta de puntos de la teoría?
    ============================================================ */
