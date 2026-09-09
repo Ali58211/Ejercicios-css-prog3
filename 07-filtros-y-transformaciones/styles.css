@@ -51,22 +51,22 @@ body {
 
 /* Cada cuadro tiene su propio color de fondo. */
 .cuadro:nth-child(1) .foto {
-  background: linear-gradient(135deg, #f4a261, #e76f51);
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRc5Clj8oitY9ik9hflRJmis4NpCIbCOm7WB61zHFetbIUfzos01woRhB-&s=10");
 }
 .cuadro:nth-child(2) .foto {
-  background: linear-gradient(135deg, #60a5fa, #2563eb);
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbZzgSTgKnQU0PXJ2aDThV76zGlCXuC9syt-SvzUTsVqcTunu7Y2Pb8KOh&s=10");
 }
 .cuadro:nth-child(3) .foto {
-  background: linear-gradient(135deg, #fde047, #f59e0b);
+  background-image: url("https://www.infocampo.com.ar/wp-content/uploads/2025/05/precio-del-girasol.webp");
 }
 .cuadro:nth-child(4) .foto {
-  background: linear-gradient(135deg, #a78bfa, #7c3aed);
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYoQRn5o8Bj0zMHBiIIP2Eea1-AEfwnEZiEom6V4CuwA&s=10");
 }
 .cuadro:nth-child(5) .foto {
-  background: linear-gradient(135deg, #34d399, #059669);
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSn6BNaPIFiros1vg8rJDzTvu8Yrnc9rLRmn-8spS6Dg4uNTNCgTl9qgg&s=10");
 }
 .cuadro:nth-child(6) .foto {
-  background: linear-gradient(135deg, #f472b6, #db2777);
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsYruphaMs-14EQq4AKw5LGpidlW2fb9CoiWOmi-s_MHaf10idokRaN3g8&s=10");
 }
 
 figcaption {
