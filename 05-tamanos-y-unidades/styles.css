@@ -22,7 +22,7 @@ body {
 }
 
 /* ============================================================
-   TODO 1 — El banner
+   TODO 1 ✅— El banner
    A .banner dale:
    - width: 100%
    - height: 40vh           40% de la altura de la ventana
@@ -31,36 +31,56 @@ body {
    - text-align: center
    Probá después cambiar 40vh por 400px y achicar la ventana:
    ¿cuál de los dos se adapta mejor?
+   El que se adapta mejor es vh ya que es una medida relativa, en px es una medida fija.
+   -el % es relativa al contenedor padre.
+   -vh es la altura de pantalla, es relativa.
    ============================================================ */
-
+.banner {
+  width: 100%;
+  height: 40vh;
+  background-color: #22223b;
+  color: #f2e9e4;
+  text-align: center;
+}
 /* ============================================================
-   TODO 2 — Título del festival
+   TODO 2 ✅— Título del festival
    A .banner h1 dale:
    - font-size: 4rem
    rem es relativo al tamaño de fuente del html. Probá cambiar
    4rem por 4vw y mover el ancho de la ventana. ¿Qué diferencia
    hay entre rem y vw?
+   -La diferencia es que vw es el tamaño de visualizacion de la pantalla.
+   -rem es relativo al documento (tamaño de fuente del html).
    ============================================================ */
-
+.banner h1 {
+  font-size: 4rem;
+}
 /* ============================================================
-   TODO 3 — Contenido centrado
+   TODO 3 ✅— Contenido centrado
    A .contenido dale:
    - max-width: 700px
    - margin: 0 auto         arriba/abajo 0, izq/der auto (centra)
    - padding: 24px
    Achicá la ventana: ¿por qué max-width en vez de width?
    ============================================================ */
-
+.contenido {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 24px;
+}
 /* ============================================================
-   TODO 4 — Etiqueta
+   TODO 4 ✅— Etiqueta
    A .etiqueta dale:
    - font-size: 1.5em
    em es relativo al tamaño de fuente del ELEMENTO PADRE.
    Cambiale el font-size al .banner y mirá cómo se mueve solo.
+   - si el padre crece el hijo tambien
    ============================================================ */
-
+.etiqueta {
+  font-size: 1.5em;
+}
 /* ============================================================
-   TODO 5 — El póster
+   TODO 5 ✅— El póster
    A .poster dale:
    - font-size: 80px
    - text-align: center
@@ -69,9 +89,17 @@ body {
    - margin: 24px auto
    - background-color: #e8e2d9
    ============================================================ */
-
+.poster {
+  font-size: 80px;
+  text-align: center;
+  min-height: 160px;
+  max-width: 300px;
+  margin: 24px auto;
+  background-color: #969189;
+}
 /* ============================================================
     PARA PENSAR
    En tu equipo todo puede verse bien, pero ¿cómo verificarías
    que el banner también se ve bien en un celular?
+   hay que inspeccionerlo en la parte de distintos disapositivos e ir cambiando los valores
    ============================================================ */
