@@ -35,7 +35,6 @@ body {
   font-family: system-ui, sans-serif;
   background-color: #f3f4f6;
   color: #111827;
-  padding: 24px;
 }
 
 .barra {
@@ -45,6 +44,11 @@ body {
   padding: 16px 24px;
   background-color: #111827;
   color: #f9fafb;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 .logo {
@@ -61,6 +65,7 @@ body {
   max-width: 900px;
   margin: 0 auto;
   padding: 0 24px 80px;
+  padding-top: 70px;
 }
 
 .titulo {
@@ -76,6 +81,7 @@ body {
 }
 
 .pelicula {
+  position: relative;
   width: 260px;
   background-color: #ffffff;
   border: 1px solid #e5e7eb;
@@ -93,6 +99,7 @@ body {
   font-weight: bold;
   padding: 4px 10px;
   border-radius: 999px;
+  /* se agrega position */
 }
 
 .poster {
@@ -101,9 +108,15 @@ body {
   margin-bottom: 12px;
 }
 
-.pelicula:nth-child(1) .poster { background: linear-gradient(135deg, #1e3a8a, #7c3aed); }
-.pelicula:nth-child(2) .poster { background: linear-gradient(135deg, #7f1d1d, #111827); }
-.pelicula:nth-child(3) .poster { background: linear-gradient(135deg, #065f46, #0ea5e9); }
+.pelicula:nth-child(1) .poster {
+  background: linear-gradient(135deg, #1e3a8a, #7c3aed);
+}
+.pelicula:nth-child(2) .poster {
+  background: linear-gradient(135deg, #7f1d1d, #111827);
+}
+.pelicula:nth-child(3) .poster {
+  background: linear-gradient(135deg, #065f46, #0ea5e9);
+}
 
 .pelicula h2 {
   font-size: 1.1rem;
@@ -121,4 +134,9 @@ body {
   text-decoration: none;
   padding: 12px 20px;
   border-radius: 999px;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  z-index: 1;
+  /* se agrega position, bottom, tight y z-index */
 }
