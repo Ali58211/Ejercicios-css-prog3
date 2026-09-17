@@ -33,32 +33,26 @@
   --color-texto: #1f2933;
   --color-suave: #64748b;
   --espacio: 16px;
-  --color-marca: #1e3a8a;
-  /* se determina un color 2 */
 }
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  /* cambia a border-box 1 */
+  box-sizing: content-box;
 }
 
 body {
   font-family: system-ui, sans-serif;
   background-color: #f1f5f9;
   color: var(--color-texto);
-  padding: 0;
 }
 
 .barra {
-  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 16px 24px;
   background-color: var(--color-marca);
   color: #ffffff;
-  /* 3- se agreca el display flex */
 }
 
 .logo {
@@ -77,6 +71,7 @@ body {
 }
 
 .contenedor {
+  --color-marca: #1e3a8a;
   max-width: 960px;
   margin: 0 auto;
   padding: 24px;
@@ -91,8 +86,6 @@ body {
   border-radius: 12px;
   padding: 20px;
   margin-bottom: 20px;
-  position: relative;
-  /* 4- se agrega position */
 }
 
 .banda {
@@ -119,8 +112,7 @@ body {
 }
 
 .destacada h1 {
-  font-size: clamp(1.4rem, 3vw, 2rem);
-  /*5- se arregla los datos de clamp */
+  font-size: clamp(2rem, 3vw, 1.4rem);
   margin-bottom: 8px;
 }
 
@@ -130,14 +122,11 @@ body {
 
 .notas {
   display: flex;
-  flex-wrap: wrap;
-  /* 8- se agrega wrap */
   gap: 16px;
 }
 
 .nota {
-  flex: 1 1 calc(33.333% - 16px);
-  /*6- se separa los datos del calc */
+  flex: 1 1 calc(33.333%-16px);
   min-width: 240px;
   background-color: #ffffff;
   border: 1px solid #e2e8f0;
@@ -151,15 +140,9 @@ body {
   margin-bottom: 12px;
 }
 
-.nota:nth-child(1) .foto-mini {
-  background: linear-gradient(135deg, #059669, #6ee7b7);
-}
-.nota:nth-child(2) .foto-mini {
-  background: linear-gradient(135deg, #b45309, #fcd34d);
-}
-.nota:nth-child(3) .foto-mini {
-  background: linear-gradient(135deg, #6d28d9, #c4b5fd);
-}
+.nota:nth-child(1) .foto-mini { background: linear-gradient(135deg, #059669, #6ee7b7); }
+.nota:nth-child(2) .foto-mini { background: linear-gradient(135deg, #b45309, #fcd34d); }
+.nota:nth-child(3) .foto-mini { background: linear-gradient(135deg, #6d28d9, #c4b5fd); }
 
 .nota h2 {
   font-size: 1.05rem;
@@ -177,23 +160,18 @@ body {
   padding: 16px;
 }
 
-@media (max-width: 700px) {
-  /*7- se cambia de min a max */
+@media (min-width: 700px) {
   .barra {
     flex-direction: column;
     gap: 8px;
   }
 
   .destacada {
-    flex-direction: row;
-    /* se cambia column por row */
+    flex-direction: column;
     align-items: stretch;
   }
 
   .nota {
     flex: 1 1 100%;
-  }
-  .texto {
-    flex-basis: 85px;
   }
 }
